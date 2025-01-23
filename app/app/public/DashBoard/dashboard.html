@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Student Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Progress Summary -->
+        <section id="progress-summary">
+            <h2>Progress Overview</h2>
+            <div class="summary">
+                <div class="summary-item">
+                    <h3>Total Courses</h3>
+                    <p id="totalCourses">0</p>
+                </div>
+                <div class="summary-item">
+                    <h3>Completed</h3>
+                    <p id="completedCourses">0</p>
+                </div>
+                <div class="summary-item">
+                    <h3>Average Grade</h3>
+                    <p id="averageGrade">0%</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Bars -->
+        <section id="progress-bars">
+            <h2>Course Completion</h2>
+            <div class="progress-bar-container">
+                <p>Course 1</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width:0px;"></div>
+                </div>
+            </div>
+            <div class="progress-bar-container">
+                <p>Course 2</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width:0px"></div>
+                </div>
+            </div>
+            <div class="progress-bar-container">
+                <p>Course 3</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width:0px;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Academic Progress Tracker. All rights reserved.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

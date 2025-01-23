@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Academic Progress Evaluator</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Academic Progress Profile</h1>
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <h2>Student Profile</h2>
+            <form id="profileForm">
+                <label for="studentName">Name:</label>
+                <input type="text" id="studentName" required><br>
+
+                <label for="studentID">Student ID:</label>
+                <input type="text" id="studentID" required><br>
+
+                <label for="course">Course:</label>
+                <input type="text" id="course" required><br>
+
+                <button type="submit">Save Profile</button>
+            </form>
+        </div>
+
+        <!-- Academic Progress Section -->
+        <div class="progress-section">
+            <h2>Academic Progress Tracker</h2>
+            <form id="progressForm">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" required><br>
+
+                <label for="grade">Grade (%):</label>
+                <input type="number" id="grade" min="0" max="100" required><br>
+
+                <button type="submit">Add Grade</button>
+            </form>
+
+            <h3>Current Progress</h3>
+            <div id="progressList"></div>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+
+</body>
+</html>

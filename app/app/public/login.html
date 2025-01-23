@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login-reg.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <input 
+            type="password" 
+            id="password" 
+            placeholder="Password"
+            name="password" 
+            minlength="8" 
+            maxlength="16" 
+            patter n="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,16}" 
+            title="Password must be 8-16 characters long, include at least one number, one uppercase, and one lowercase letter" 
+            required
+          >
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="/register">Register here</a></p>
+            <p><a href="index.html">Home </a></p>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

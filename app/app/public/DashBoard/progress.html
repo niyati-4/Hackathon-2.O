@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Progress Evaluator</title>
+    <link rel="stylesheet" href="progress.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Academic Progress Evaluator</h1>
+        <form id="progressForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="marks">Marks Obtained:</label>
+            <input type="number" id="marks" name="marks" required>
+
+            <label for="totalMarks">Total Marks:</label>
+            <input type="number" id="totalMarks" name="totalMarks" required>
+
+            <button type="submit">Evaluate Progress</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="progress.js"></script>
+</body>
+</html>

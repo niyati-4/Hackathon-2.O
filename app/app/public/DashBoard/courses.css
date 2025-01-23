@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1em;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.course {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course h2 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.course p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    margin-top: 20px;
+}
+.course-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.course-btn:hover {
+    background-color: #0056b3;
+}
+
+.program {
+    display: inline-block; /* Make it behave like a button */
+    padding: 15px 30px; /* Add space inside the button */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    border: none; /* Remove borders */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 18px; /* Larger font size */
+    font-family: Arial, sans-serif; /* Button font style */
+    text-decoration: none; /* Remove underline from the link */
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin: 10px; /* Add some space around the button */
+}
+
+/* .program a {
+    color: white; 
+    text-decoration: none;
+
+}
+
+.program:hover {
+    background-color: #0056b3; 
+    transition: background-color 0.3s ease; 
+} */
+/*
+Center the image and style
+.course-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px; /* Increased padding 
+    margin: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Center and resize the course image 
+.course-image {
+    width: 180px; /* Increased image size 
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Style the course title 
+.course-card h2 {
+    margin: 10px 0;
+    font-size: 22px; /* Slightly larger font size 
+    color: #333;
+}
+
+/* Style the course description 
+.course-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0 20px;
+}
+
+/* Style the button 
+.course-button {
+    padding: 15px 20px; /* Larger button size 
+    font-size: 16px; /* Increased font size 
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect 
+.course-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight scaling effect 
+}
+
+/* Style the button link 
+.course-button a {
+    color: white;
+    text-decoration: none;
+}
+*/
+/* Container for the course card */
+.course-card {
+    width: 300px; /* Adjust the square size */
+    height: 400px; /* Ensure it's a perfect rectangle/square */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Keep image at the top */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the card */
+.course-card:hover {
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Center and style the course image */
+.course-image {
+    width: 150px; /* Adjusted image size */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 20px;
+}
+
+/* Style the course title */
+.course-card h2 {
+    font-size: 20px; /* Slightly larger font */
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Style the course description */
+.course-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.course-button {
+    padding: 10px 15px; /* Button size */
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase; /* Capitalize text */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.course-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Lift effect */
+}
+
+/* Remove underline from links */
+.course-card a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f1f1f1; /* Optional: background color for better visibility */
+}
+

@@ -1,0 +1,57 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color:white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-color:rgba(220, 215, 206, 0.777);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px black;
+    text-align: center;
+  }
+  
+  h1 {
+    color:black;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color:crimson;
+    color:aquamarine;
+    border:cyan;
+    border-radius: 5px;
+    cursor:pointer;
+  }
+  
+  button:hover {
+    background-color:deeppink;
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-size: 18px;
+    color:black;
+  }
